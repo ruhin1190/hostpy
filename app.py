@@ -8,7 +8,7 @@ from flask import Flask
 from threading import Thread
 
 # 🔑 আপনার টেলিগ্রাম বট টোকেন
-BOT_TOKEN = "8919006941:AAHv9dicIeBvcuQQqMxhmFEdF6j4yKym0d4"
+BOT_TOKEN = "8962459681:AAEN-VzfP9yHpMBIn02hvsoQby5Z1CQktnA"
 bot = telebot.TeleBot(BOT_TOKEN)
 
 # 🌐 Render-এর জন্য ডামি ফ্ল্যাস্ক ওয়েব সার্ভার তৈরি
