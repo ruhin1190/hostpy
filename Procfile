@@ -1,1 +1,2 @@
-web: python3 bizoy.py
+web: python3 app.py
+
