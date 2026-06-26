@@ -25,6 +25,7 @@ def run_flask():
 
 def keep_alive():
     t = Thread(target=run_flask)
+    t.daemon = True  # থ্রেডটিকে ব্যাকগ্রাউন্ডে রাখার জন্য
     t.start()
 
 HEADERS = {
@@ -169,4 +170,4 @@ if __name__ == "__main__":
     print("🚀 ওস্তাদ, ব্যাকগ্রাউন্ডে ফ্ল্যাস্ক ওয়েব সার্ভার স্টার্ট হচ্ছে...")
     keep_alive()  # ওয়েব সার্ভার চালু করবে
     print("🤖 টেলিগ্রাম বট পোলিং শুরু হচ্ছে...")
-    bot.infinity_polling()
+    bot.infinity_polling(timeout=10, long_polling_timeout=5)
